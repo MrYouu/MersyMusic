@@ -492,7 +492,7 @@ body
     text-decoration: none;
     color: #eee;
 
-    z-index: 99;
+    z-index: 98;
 
     transition: ease .3s;
     animation: sliteAside .5s ease-out forwards;
