@@ -507,8 +507,6 @@ body
     transition: ease .3s;
     transform: rotateY(-90deg);
     transform-origin: right;
-
-    transition: rotateY(-90deg) .5s;
 }
 
 .sideMountedLink .Inside
@@ -653,7 +651,46 @@ body
 /*#region Media 900-800 */
 @media screen and (max-width: 900px)
 {
+	.sideMountedLink img
+	{
+		transform: rotateY(0deg);
+	}
+	
+	.sideMountedLink:hover.sideMountedLink img
+	{
+		transform: rotateY(0deg);
+	}
 
+	.sideMountedLink:not(:hover).sideMountedLink img
+	{
+		transform: rotateY(0deg);
+	}
+	
+	@keyframes flipIn
+	{
+		0%
+		{
+			transform: rotateY(0deg);
+		}
+
+		100%
+		{
+			transform: rotateY(0deg);
+		}
+	}
+
+	@keyframes flipOut
+	{
+		0%
+		{
+			transform: rotateY(0deg);
+		}
+
+		100%
+		{
+			transform: rotateY(0deg);
+		}
+	}
 }
 
 @media screen and (max-width: 800px)
