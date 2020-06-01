@@ -326,26 +326,6 @@ body
 }
 /*#endregion Top main part */
 
-.Button
-{
-    padding: 12px 30px;
-    background-color: white;
-    color: black;
-    border-radius: 999px;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
-
-    transition: ease .3s;
-}
-
-.Button:hover
-{
-    background-color: black;
-    color: white;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);
-}
-
 /*#region Music list */
 .musicList
 {
@@ -476,6 +456,110 @@ body
     color: blue;
 }
 /*#endregion Bottom Bar */
+
+.Button
+{
+    padding: 12px 30px;
+    background-color: white;
+    color: black;
+    border-radius: 999px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+
+    transition: ease .3s;
+}
+
+.Button:hover
+{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.sideMountedLink
+{
+    position: sticky;
+    float: right;
+    width: 250px;
+    padding: 12px 22px;
+    background-image: linear-gradient(to left, #222, #666);
+    position: -webkit-sticky;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    top: 0;
+    font-size: 30px;
+    text-decoration: none;
+    color: #eee;
+
+    z-index: 99;
+
+    transition: ease .3s;
+    animation: sliteAside .5s ease-out forwards;
+}
+
+.sideMountedLink img
+{
+    position: relative;
+    width: 40px;
+    top: 7;
+
+    transition: ease .3s;
+    transform: rotateY(-90deg);
+    transform-origin: right;
+
+    transition: rotateY(-90deg) .5s;
+}
+
+.sideMountedLink .Inside
+{
+    position: relative;
+    top: -4;
+}
+
+.sideMountedLink:hover.sideMountedLink img
+{
+    animation: flipIn .3s ease-in forwards;
+}
+
+.sideMountedLink:not(:hover).sideMountedLink img
+{
+    animation: flipOut .3s ease-out forwards;
+}
+
+.sideMountedLink:hover
+{
+    width: 290px;
+    filter: brightness(1.3);
+}
+
+/*#region Animations */
+@keyframes flipIn
+{
+    0%
+    {
+        transform: rotateY(-90deg);
+    }
+
+    100%
+    {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes flipOut
+{
+    0%
+    {
+        transform: rotateY(0deg);
+    }
+
+    100%
+    {
+        transform: rotateY(-90deg);
+    }
+}
+/*#endregion Animations */
 
 /*#region Media 1300-1000 */
 @media screen and (max-width: 1300px)
