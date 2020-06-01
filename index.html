@@ -1,0 +1,143 @@
+<html id = "html">
+    <head>
+        <link href = 'https://fonts.googleapis.com/css?family=Over the Rainbow' rel = 'stylesheet'>
+        <link type = "text/css" rel = "stylesheet" href = "Files/Style.css">
+        <link rel = "icon" href = "Images/tabIcon.png" type = "image" sizes = "16x16">
+
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        
+        <script type = "text/javascript" src = "Files/Functions.js"></script>
+        <script src="https://kit.fontawesome.com/190623e0b3.js" crossorigin="anonymous"></script>
+
+        <title>Mer$y Music</title>
+    </head>
+
+    <body>
+        <!-- #region Loader -->
+        <div class = "Loader">
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+        </div>
+        <script>
+            window.addEventListener("load", function ()
+			{
+				const Loader = document.querySelector(".Loader")
+				Loader.className += " hidden";
+            });
+
+            window.scroll(
+            {
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+
+            function toMyMusic()
+			{
+				window.scroll(
+				{
+					top: 500,
+					left: 0,
+					behavior: 'smooth'
+				});
+			}
+		</script>
+        <!-- #endregion Loader -->
+
+        <div class = "topMainPart">
+            <div class = "topBar">
+                <a href = "index.html" class = "Logo">MER$Y</a>
+                <a onclick = "toMyMusic()">My music</a>
+            </div>
+
+            <h1 class = "M">M</h1>
+            <h1 class = "ersy">ER$Y</h1>
+            <h1 class = "usic">USIC</h1>
+            
+            <h1 class = "sideTextTitle">Introduction</h1>
+            <p>
+                I'm here for you and your satisfaction to chill your body. Close your eyes,
+                lay down and feel the vibes...
+                <a onclick = "toMyMusic()" class = "Button">See More</a>
+            </p>
+
+            <img src = "Images/music.png" class = "mainPageImage">
+        </div>
+
+        <div class = "musicList">
+            <h1>My music production</h1>
+
+            <div class = "musicHolder">
+                <img src = "Images/musicAndMultimediaDisk.png" class = "icon">
+
+                <p class = "Name">VV$</p>
+
+                <audio src = "Music/VV$.mp3" controls>
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class = "musicHolder">
+                <img src = "Images/musicAndMultimediaDisk.png" class = "icon">
+
+                <p class = "Name">Mood</p>
+
+                <audio src = "Music/Mood.mp3" controls>
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class = "musicHolder">
+                <img src = "Images/musicAndMultimediaDisk.png" class = "icon">
+
+                <p class = "Name">Tell Me</p>
+
+                <audio src = "Music/Tell Me.mp3" controls>
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class = "musicHolder">
+                <img src = "Images/musicAndMultimediaDisk.png" class = "icon">
+
+                <p class = "Name">BaG C<continue>ha$eR</continue><threeDots> ...</threeDots></p>
+
+                <audio src = "Music/BaG Cha$eR.mp3" controls>
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class = "musicHolder">
+                <img src = "Images/musicAndMultimediaDisk.png" class = "icon">
+
+                <p class = "Name">Kool</p>
+
+                <audio src = "Music/Kool (Snippet).mp3" controls>
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class = "musicHolder">
+                <img src = "Images/musicAndMultimediaDisk.png" class = "icon">
+
+                <p class = "Name">XANS</p>
+
+                <audio src = "Music/XANS.mp3" controls>
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <div class = "bottomBar">
+            <a href = "https://www.instagram.com/astroblxde/" class = "Instagram" target = "_blank"><i class = "fab fa-instagram"></i> Instagram</a>
+            <a href = "https://www.youtube.com/channel/UC-Hw_Q9d_bzVb8BjEG1P3Lw" class = "Youtube" target = "_blank"><i class = "fab fa-youtube"></i> YouTube</a>
+            <a href = "https://teespring.com/stores/mery-6" class = "Merch" target = "_blank"><i class = "fas fa-tshirt"></i> Merch</a>
+        </div>
+    </body>
+</html>
